@@ -1,0 +1,62 @@
+body
+{
+	background: #292929;
+	font-family: tahoma,verdana,sans;
+	font-size: 12px;
+	color: #cccccc;
+}
+
+div.main-div
+{
+	background: #404040;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	text-align: left;
+	margin: 0 auto;
+	padding: 1em 2em 2em;
+	min-width: 700px;
+	width: 75%;
+}
+
+
+.dict-name
+{
+	list-style-type: square;
+}
+
+.clip-name
+{
+	list-style-type: none;
+}
+
+.play-button
+{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: transparent;
+	background: transparent;
+	color: #cccccc;
+	font-size: 12px;
+}
+
+.play-button:focus 
+{
+    outline: none;
+}
+
+.video-player
+{
+	width: 800px;
+	height: 450px;
+	z-index: 1000;
+	position: absolute;
+}
+
+.not-available-label
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
