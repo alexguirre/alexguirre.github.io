@@ -45,6 +45,11 @@ div.main-div
     outline: none;
 }
 
+.play-button:hover
+{
+	color: #eeeeee;
+}
+
 .video-player
 {
 	width: 800px;
