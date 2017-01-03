@@ -6,6 +6,15 @@ body
 	color: #cccccc;
 }
 
+div.home-link-div, a.home-link:hover
+{
+    text-decoration: none;
+	margin: 0 auto;
+	min-width: 700px;
+	width: 85%;
+	color: #dedede;
+}
+
 div.main-div
 {
 	background: #404040;
@@ -15,9 +24,20 @@ div.main-div
 	margin: 0 auto;
 	padding: 1em 2em 2em;
 	min-width: 700px;
-	width: 75%;
+	width: 85%;
 }
 
+div.sub-div 
+{ 
+	background: #505050;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	text-align: left;
+	margin: 1.5em auto;
+	padding: 1em 1em 1em;
+	min-width: 650px;
+	width: 95%;
+}
 
 .dict-name
 {
@@ -64,4 +84,22 @@ div.main-div
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+ 
+a
+{
+	color: #cccccc;
+    text-decoration: none;
+}
+
+a:hover 
+{
+	color: #cccccc;
+    text-decoration: underline;
+}
+
+a:active 
+{
+	color: #cccccc;
+    text-decoration: underline;
 }
