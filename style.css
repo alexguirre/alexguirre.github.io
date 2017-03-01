@@ -103,3 +103,34 @@ a:active
 	color: #cccccc;
     text-decoration: underline;
 }
+
+
+textarea.joaat-textarea
+{
+    display: block;
+	background: #707070;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	text-align: left;
+    margin: 0.5em auto 0.5em auto;
+	padding: 1em 1em 1em 1em;
+	width: 90%;
+	resize: none;
+}
+
+button.joaat-button
+{
+    display: block;
+    background: #404040;
+    border-radius: 5px;
+    border-color: #707070;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    text-decoration-style: solid;
+    color: #cccccc;
+    font-size: large;
+    margin: 0.5em auto 0.5em auto;
+    padding: 1em 1em 1em 1em;
+    width: 80%;
+    resize: none;
+}

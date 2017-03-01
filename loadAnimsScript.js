@@ -1,7 +1,7 @@
 var trianglePointRight = '\u25B6';
 var trianglePointBottom = '\u25BC';
 
-function addAnims(array) {  // array[0] == anim dicti // array[i] ()where i != 0) == anim name
+function addAnims(array) {  // array[0] == anim dicti // array[i] (where i != 0) == anim name
 	var animDictList = document.getElementById('dictList');
 	
 	var dictItem = document.createElement('li');
@@ -17,7 +17,7 @@ function addAnims(array) {  // array[0] == anim dicti // array[i] ()where i != 0
 	
 	h.appendChild(document.createTextNode(array[0] + '	'));
 	h.appendChild(playButton);
-	
+
 	dictItem.appendChild(h);
 	dictItem.id = array[0];
 	dictItem.className = 'dict-name';
