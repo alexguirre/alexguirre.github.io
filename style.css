@@ -6,7 +6,7 @@ body
 	color: #cccccc;
 }
 
-div.home-link-div, a.home-link:hover
+div.header-links-div, a.header-link:hover
 {
     text-decoration: none;
 	margin: 0 auto;
