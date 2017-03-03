@@ -62,6 +62,9 @@ window.onload = init;
 
 function init() {
 	addAllAnims();
+	var spinLoader = document.getElementById("spinLoader");
+	spinLoader.parentNode.removeChild(spinLoader);
+	document.getElementById("mainDiv").style.display = "block";
 }
 
 
