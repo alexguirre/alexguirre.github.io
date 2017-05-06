@@ -92,7 +92,7 @@ function onPlayButtonClick() {
 		
 		videoPlayerFrame.className = 'video-player';
 		var videoId = getVideoId(this.id.substring(0, this.id.indexOf('-play-button')));
-		videoPlayerFrame.src = (videoId == null) ? ('notAvailableYet.html') : ('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+		videoPlayerFrame.src = (videoId == null) ? ('video-not-available-yet.html') : ('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
 		this.appendChild(videoPlayerFrame);
 			
 		currentOpenPlayButton = this;
