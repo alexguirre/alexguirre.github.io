@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\RAGENativeUI.Docs.shfbproj" started="19/08/2017 16:29:59">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;E:\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    E:\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.6.2&#39; located in &#39;E:\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2017.5.15.0
+Copyright &#169; 2006-2017, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Source\RAGENativeUI.csproj
+    Found project &#39;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Source\RAGENativeUI.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Source\..\..\..\..\..\Rockstar Games\Grand Theft Auto V\RAGENativeUI.dll&#39;
+
+References to include (excluding framework assemblies):
+    RagePluginHookSDK
+
+Copying XML comments files
+    E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Source\..\..\..\..\..\Rockstar Games\Grand Theft Auto V\RAGENativeUI.xml -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\RAGENativeUI.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, Ingl&#233;s (Estados Unidos))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00,0030
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00,0005
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
+Compilaci&#162;n iniciada a las 19/08/2017 16:29:59.
+Proyecto &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\GenerateRefInfo.proj&quot; en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 1 assemblies for reflection and 2 dependency assemblies.
+  Wrote information on 6 namespaces, 79 types, and 795 members
+  Copiando el archivo de &quot;reflection.org&quot; en &quot;reflection.all&quot;.
+  XslTransform (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;E:\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Compilaci&#162;n del proyecto terminada &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\GenerateRefInfo.proj&quot; (destinos predeterminados).
+
+Compilaci&#162;n correcta.
+
+Tiempo transcurrido 00:00:01.17
+    Last step completed in 00:00:01,4172
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
+Compilaci&#162;n iniciada a las 19/08/2017 16:30:01.
+Proyecto &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\TransformManifest.proj&quot; en nodo 1 (destinos predeterminados).
+TransformManifest:
+  XslTransform (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;E:\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copiando el archivo de &quot;reflection.xml&quot; en &quot;reflection.nofilenames&quot;.
+  XslTransform (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;E:\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;E:\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Compilaci&#162;n del proyecto terminada &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\TransformManifest.proj&quot; (destinos predeterminados).
+
+Compilaci&#162;n correcta.
+
+Tiempo transcurrido 00:00:00.79
+    Last step completed in 00:00:01,0376
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00,0240
+</buildStep>
+<buildStep step="GenerateInheritedDocumentation">
+Generating inherited documentation...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateInheritedDocs.proj]
+Sandcastle Help File Builder and Tools, version 2017.5.15.0
+Copyright &#184; 2006-2017, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Reflection information will be retrieved from &#39;reflection.xml&#39;
+Inherited documentation will be written to &#39;_InheritedDocs_.xml&#39;
+Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\*.xml
+Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.4.0.0\*.xml
+Indexing E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\RagePluginHookSDK.xml
+Indexing E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\RAGENativeUI.xml
+Indexed 161602 members in 129 file(s).  2 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Merging inherited documentation...
+
+
+Documentation merged successfully
+    Last step completed in 00:00:01,2309
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
+Compilaci&#162;n iniciada a las 19/08/2017 16:30:03.
+Proyecto &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\GenerateIntermediateTOC.proj&quot; en nodo 1 (destinos predeterminados).
+GenerateIntermediateTOC:
+  XslTransform (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;E:\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Compilaci&#162;n del proyecto terminada &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\GenerateIntermediateTOC.proj&quot; (destinos predeterminados).
+
+Compilaci&#162;n correcta.
+
+Tiempo transcurrido 00:00:00.43
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00,6735
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00,1628
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00,0015
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
+Compilaci&#162;n iniciada a las 19/08/2017 16:30:04.
+Proyecto &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj&quot; en nodo 1 (destinos predeterminados).
+BuildTopics:
+  BuildAssembler (v2017.5.15.0)
+  Copyright &#184; 2006-2017, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Control.#ctor(System.Nullable{Rage.GameControl})] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Control.#ctor(System.Nullable{System.Windows.Forms.Keys},System.Nullable{Rage.ControllerButtons},System.Nullable{Rage.GameControl})] Unknown reference link target &#39;T:Rage.ControllerButtons&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Control.#ctor(System.Nullable{System.Windows.Forms.Keys},System.Nullable{Rage.ControllerButtons},System.Nullable{Rage.GameControl})] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Control.Button] Unknown reference link target &#39;T:Rage.ControllerButtons&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Control.NativeControl] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.PostFxAnimation.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.PostFxAnimation.Layer.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.PostFxAnimation.LayerBlend.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.TextureDictionary.Dismiss] Unknown reference link target &#39;M:Rage.IAsset.Dismiss&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.TextureDictionary.IsLoaded] Unknown reference link target &#39;P:Rage.IAsset.IsLoaded&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.TextureDictionary.Load] Unknown reference link target &#39;M:Rage.IAsset.Load&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.TextureDictionary.LoadAndWait] Unknown reference link target &#39;M:Rage.IAsset.LoadAndWait&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.TextureDictionary.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.TextureDictionary.Name] Unknown reference link target &#39;P:Rage.INamedAsset.Name&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.TimeCycleModifier.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Elements.TimerBarsManager.Fiber] Unknown reference link target &#39;T:Rage.GameFiber&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.IMenuComponent.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Menus.Menu.AllowedControls] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Menus.Menu.AllowedControls] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [F:RAGENativeUI.Menus.Menu.DefaultAllowedControls] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Menu.Draw(Rage.Graphics)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuBackground.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuBanner.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuDescription.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuItem.Draw(Rage.Graphics,RAGENativeUI.Menus.Menu,System.Boolean,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuItemCheckbox.Draw(Rage.Graphics,RAGENativeUI.Menus.Menu,System.Boolean,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuItemsCollection.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuItemScroller.Draw(Rage.Graphics,RAGENativeUI.Menus.Menu,System.Boolean,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Menus.MenusManager.Fiber] Unknown reference link target &#39;T:Rage.GameFiber&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenusManager.OnRawFrameRender(System.Object,Rage.GraphicsEventArgs)] Unknown reference link target &#39;T:Rage.GraphicsEventArgs&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuSubtitle.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.MenuUpDownDisplay.Draw(Rage.Graphics,System.Single@,System.Single@)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawArrowLeft(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawArrowRight(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawArrowsUpDown(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawArrowsUpDownBackground(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawBackground(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawBanner(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxCrossBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxCrossWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxEmptyBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxEmptyWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxTickBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawCheckboxTickWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.IMenuSkin.DrawSelectedGradient(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawArrowLeft(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawArrowRight(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawArrowsUpDown(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawArrowsUpDownBackground(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawBackground(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawBanner(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxCrossBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxCrossWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxEmptyBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxEmptyWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxTickBlack(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawCheckboxTickWhite(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawSelectedGradient(Rage.Graphics,System.Single,System.Single,System.Single,System.Single)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawText(Rage.Graphics,System.String,RAGENativeUI.Rendering.Font,System.Drawing.RectangleF,System.Drawing.Color,RAGENativeUI.Rendering.TextHorizontalAligment,RAGENativeUI.Rendering.TextVerticalAligment)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Menus.Rendering.MenuSkin.DrawText(Rage.Graphics,System.String,System.String,System.Single,System.Drawing.RectangleF,System.Drawing.Color,RAGENativeUI.Rendering.TextHorizontalAligment,RAGENativeUI.Rendering.TextVerticalAligment)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Menus.Rendering.MenuSkin.Image] Unknown reference link target &#39;T:Rage.Texture&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Rendering.ISkin.DrawText(Rage.Graphics,System.String,RAGENativeUI.Rendering.Font,System.Drawing.RectangleF,System.Drawing.Color,RAGENativeUI.Rendering.TextHorizontalAligment,RAGENativeUI.Rendering.TextVerticalAligment)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Rendering.ISkin.DrawText(Rage.Graphics,System.String,System.String,System.Single,System.Drawing.RectangleF,System.Drawing.Color,RAGENativeUI.Rendering.TextHorizontalAligment,RAGENativeUI.Rendering.TextVerticalAligment)] Unknown reference link target &#39;T:Rage.Graphics&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Rendering.ISkin.Image] Unknown reference link target &#39;T:Rage.Texture&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.BigMessage.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.BigMessage.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Rotator&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.BigMessage.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.BigMessage.ShowWeaponPurchasedMessage(System.String,System.String,Rage.WeaponHash,System.Byte,System.UInt32)] Unknown reference link target &#39;T:Rage.WeaponHash&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtonControlSlot.#ctor(System.String,Rage.GameControl)] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtonControlSlot.#ctor(System.String,System.Int32,Rage.GameControl)] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Scaleforms.InstructionalButtonControlSlot.Control] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtons.AddSlot(System.String,Rage.GameControl)] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtons.AddSlot(System.String,System.Int32,Rage.GameControl)] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtons.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtons.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Rotator&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.InstructionalButtons.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Scaleforms.MissionPassedScreen.ContinueControl] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Scaleforms.MissionPassedScreen.ExpandControl] Unknown reference link target &#39;T:Rage.GameControl&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Scaleforms.MissionPassedScreen.Fiber] Unknown reference link target &#39;T:Rage.GameFiber&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.Scaleform.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.Scaleform.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Rotator&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:RAGENativeUI.Scaleforms.Scaleform.Draw3D(Rage.Vector3,Rage.Rotator,Rage.Vector3)] Unknown reference link target &#39;T:Rage.Vector3&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:RAGENativeUI.Scaleforms.Scaleform.MemoryAddress] Unknown reference link target &#39;P:Rage.IAddressable.MemoryAddress&#39;. [E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj]
+  Processed 788 topic(s)
+  83 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 8 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
+Compilaci&#162;n del proyecto terminada &quot;E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\BuildTopics.proj&quot; (destinos predeterminados).
+
+Compilaci&#162;n correcta.
+
+Tiempo transcurrido 00:00:08.62
+    Last step completed in 00:00:08,8907
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00,0050
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2017.5.15.0
+Copyright &#184; 2006-2017, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website
+Processed 788 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\WebKI.xml
+Saving website table of contents to E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\WebTOC.xml
+    Last step completed in 00:00:00,8273
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\AlertCaution.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\AlertNote.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\AlertSecurity.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\CFW.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\CodeExample.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\favicon.ico
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privclass.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privdelegate.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privenumeration.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privevent.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privextension.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privfield.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privinterface.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privmethod.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privproperty.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\privstructure.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protclass.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protdelegate.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protenumeration.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protevent.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protextension.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protfield.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protinterface.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protmethod.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protoperator.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protproperty.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\protstructure.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubclass.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubdelegate.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubenumeration.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubevent.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubextension.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubfield.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubinterface.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubmethod.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\puboperator.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubproperty.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\pubstructure.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\SectionCollapsed.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\SectionExpanded.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\slMobile.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\static.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\xna.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\scripts\branding.js
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-cs-CZ.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-de-DE.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-en-US.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-es-ES.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-fr-FR.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-Help1.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-HelpViewer.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-it-IT.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-ja-JP.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-ko-KR.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-pl-PL.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-pt-BR.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-ru-RU.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-tr-TR.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-Website.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-zh-CN.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding-zh-TW.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\styles\branding.css
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\index.html
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\search.html
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\SearchHelp.aspx
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\SearchHelp.inc.php
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\SearchHelp.php
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\Web.Config
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\html\GeneralError.htm
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\html\PageNotFound.htm
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\Search.png
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\TocClose.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\TocCollapsed.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\TocExpanded.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\icons\TocOpen.gif
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\scripts\branding-Website.js
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\scripts\clipboard.min.js
+E:\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; E:\Microsoft Visual Studio\Projects\RAGENativeUI\RAGENativeUI\Documentation\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:01,1943
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:01,3886
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1102 files for the website content
+    Last step completed in 00:00:03,5680
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00,4878
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 19/08/2017 16:30:20.  Total time: 00:00:21,2417
+
+</buildStep>
+</shfbBuild>
