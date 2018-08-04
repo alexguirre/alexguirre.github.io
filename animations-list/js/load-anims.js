@@ -115,4 +115,27 @@ function getVideoId(animDict)
 }
 
 
+function downloadTxt()
+{
+	var text = "";
+    for(var i = 0; i < animations.length; i++) {
+
+    	var array = animations[i];
+    	var animDictName = array[0];
+        for(var j = 1; j < array.length; j++) {
+            text += animDictName + ' ' + array[j] + '\n';
+        }
+    }
+
+    var blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+    var a = window.document.createElement('a');
+    a.href = window.URL.createObjectURL(blob);
+    a.download = 'animations.txt';
+
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+}
+
 
