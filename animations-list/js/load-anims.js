@@ -1,5 +1,5 @@
-var trianglePointRight = '\u25B6';
-var trianglePointBottom = '\u25BC';
+// var trianglePointRight = '\u25B6';
+// var trianglePointBottom = '\u25BC';
 
 function addAnims(array) {  // array[0] == anim dicti // array[i] (where i != 0) == anim name
 	var animDictList = document.getElementById('dictList');
@@ -7,16 +7,16 @@ function addAnims(array) {  // array[0] == anim dicti // array[i] (where i != 0)
 	var dictItem = document.createElement('li');
 	
 	
-	var playButton = document.createElement('button');
-	playButton.id = array[0] + '-play-button';
-	playButton.className = 'play-button';
-	playButton.appendChild(document.createTextNode(trianglePointRight));
-	playButton.onclick = onPlayButtonClick;
+	// var playButton = document.createElement('button');
+	// playButton.id = array[0] + '-play-button';
+	// playButton.className = 'play-button';
+	// playButton.appendChild(document.createTextNode(trianglePointRight));
+	// playButton.onclick = onPlayButtonClick;
 	
 	var h = document.createElement('h3');
 	
-	h.appendChild(document.createTextNode(array[0] + '	'));
-	h.appendChild(playButton);
+	h.appendChild(document.createTextNode(array[0]));
+	// h.appendChild(playButton);
 
 	dictItem.appendChild(h);
 	dictItem.id = array[0];
@@ -68,51 +68,51 @@ function init() {
 }
 
 
-var currentOpenPlayButton = null;
-var videoPlayerFrame = null;
-function onPlayButtonClick() {
+// var currentOpenPlayButton = null;
+// var videoPlayerFrame = null;
+// function onPlayButtonClick() {
 	
-	if(this != currentOpenPlayButton) // open this
-	{
-		this.childNodes[0].nodeValue = trianglePointBottom;
+// 	if(this != currentOpenPlayButton) // open this
+// 	{
+// 		this.childNodes[0].nodeValue = trianglePointBottom;
 		
-		if(currentOpenPlayButton != null) // close other
-			currentOpenPlayButton.childNodes[0].nodeValue = trianglePointRight;
+// 		if(currentOpenPlayButton != null) // close other
+// 			currentOpenPlayButton.childNodes[0].nodeValue = trianglePointRight;
 			
-		if(videoPlayerFrame != null && videoPlayerFrame.parentNode != null)
-		{
-			videoPlayerFrame.parentNode.removeChild(videoPlayerFrame);
-		}
-		else
-		{
-			videoPlayerFrame = document.createElement('iframe');
-			videoPlayerFrame.setAttribute("allowfullscreen", "allowfullscreen");
-		}
+// 		if(videoPlayerFrame != null && videoPlayerFrame.parentNode != null)
+// 		{
+// 			videoPlayerFrame.parentNode.removeChild(videoPlayerFrame);
+// 		}
+// 		else
+// 		{
+// 			videoPlayerFrame = document.createElement('iframe');
+// 			videoPlayerFrame.setAttribute("allowfullscreen", "allowfullscreen");
+// 		}
 		
 		
-		videoPlayerFrame.className = 'video-player';
-		var videoId = getVideoId(this.id.substring(0, this.id.indexOf('-play-button')));
-		videoPlayerFrame.src = (videoId == null) ? ('video-not-available-yet.html') : ('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
-		this.appendChild(videoPlayerFrame);
+// 		videoPlayerFrame.className = 'video-player';
+// 		var videoId = getVideoId(this.id.substring(0, this.id.indexOf('-play-button')));
+// 		videoPlayerFrame.src = (videoId == null) ? ('video-not-available-yet.html') : ('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+// 		this.appendChild(videoPlayerFrame);
 			
-		currentOpenPlayButton = this;
-	}
-	else // close this
-	{
-		this.childNodes[0].nodeValue = trianglePointRight;
-		if(videoPlayerFrame != null && videoPlayerFrame.parentNode != null)
-			videoPlayerFrame.parentNode.removeChild(videoPlayerFrame);
+// 		currentOpenPlayButton = this;
+// 	}
+// 	else // close this
+// 	{
+// 		this.childNodes[0].nodeValue = trianglePointRight;
+// 		if(videoPlayerFrame != null && videoPlayerFrame.parentNode != null)
+// 			videoPlayerFrame.parentNode.removeChild(videoPlayerFrame);
 		
-		currentOpenPlayButton = null;
-	}
+// 		currentOpenPlayButton = null;
+// 	}
 	
-} 
+// } 
 
 
-function getVideoId(animDict)
-{
-	return videosIds[animDict];
-}
+// function getVideoId(animDict)
+// {
+// 	return videosIds[animDict];
+// }
 
 
 function downloadTxt()
