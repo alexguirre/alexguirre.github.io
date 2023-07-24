@@ -1,0 +1,19 @@
+---
+title: Blog
+---
+{% from "fragments.njk" import allTagsList, postSummary %}
+{% extends 'default.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/blog.css">
+{% endblock %}
+
+{% block main %}
+<h1>Blog Posts</h1>
+
+{{ allTagsList(collections) }}
+
+{% for post in collections.blogPosts | reverse %}
+    {{ postSummary(post) }}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,32 @@
+header {
+    margin-top: 0.67em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header-push {
+    margin-left: auto;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--default-monospace-font-family);
+    color: var(--theme-text);
+    text-decoration: none;
+}
+
+.header-title:hover {
+    filter: invert(0.35);
+}
+
+.header-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./_site/js",
+    "allowJs": true,
+    "target": "es2022",
+    "lib": ["es2022", "dom"],
+    "types": [],
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}

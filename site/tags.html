@@ -1,0 +1,27 @@
+---
+title: Tags
+permalink: /blog/tags/
+---
+{% from "fragments.njk" import allTagsList, postSummarySmall %}
+{% extends "default.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/blog.css">
+{% endblock %}
+
+{% block main %}
+<h1>Tags</h1>
+{{ allTagsList(collections) }}
+
+{% for tag, posts in collections | cleanTagCollections %}
+<section id="{{ tag }}" class="tag-section">
+    <h2># {{ tag }}</h2>
+
+    <div class="tag-section-post-index">
+    {% for post in posts | reverse %}
+        {{ postSummarySmall(post, headingLevel=3) }}
+    {% endfor %}
+    </div>
+</section>
+{% endfor %}
+{% endblock %}

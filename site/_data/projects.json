@@ -1,0 +1,22 @@
+[
+  {
+    "name": "rage::par",
+    "url": "https://alexguirre.github.io/rage-parser-dumps/",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc vitae tortor aliquam aliquet."
+  },
+  {
+    "name": "RAGENativeUI",
+    "url": "https://github.com/alexguirre/RAGENativeUI",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc vitae tortor aliquam aliquet."
+  },
+  {
+    "name": "rage-sc-tools",
+    "url": "https://github.com/alexguirre/rage-sc-tools",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc vitae tortor aliquam aliquet."
+  },
+  {
+    "name": "Inline Hasher",
+    "url": "https://marketplace.visualstudio.com/items?itemName=alexguirre.inline-hasher",
+    "summary": "A Visual Studio Code extension that allows you to insert hashes of the selected text."
+  }
+]

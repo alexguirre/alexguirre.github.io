@@ -1,0 +1,41 @@
+{% from "fragments.njk" import tag, svgIcon %}
+{% extends 'default.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/blog.css">
+<link rel="stylesheet" href="/css/syntax-highlighting.css">
+{% endblock %}
+
+
+{% block main %}
+<article class="post">
+    <h1>{{ title }}</h1>
+    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    <div class="post-content">
+    {{ content | safe }}
+    </div>
+    <ul class="tag-list">
+        {%- for tagName in tags | cleanTags -%}
+            {{- tag(tagName) -}}
+        {%- endfor -%}
+    </ul>
+</article>
+
+
+{% set previousPost = collections.blogPosts | getPreviousCollectionItem %}
+{% set nextPost = collections.blogPosts | getNextCollectionItem %}
+
+<nav class="post-nav">
+    <div class="row">
+    {% if previousPost %}
+    <a class="post-nav-link" href="{{ previousPost.url }}" title="Previous Post: {{ previousPost.data.title }}">{{ svgIcon("nav-prev")}} {{ previousPost.data.title }}</a>
+    {% endif %}
+
+    {% if nextPost %}
+    <a class="post-nav-link row-push" href="{{ nextPost.url }}" title="Next Post: {{ nextPost.data.title }}">{{ nextPost.data.title }} {{ svgIcon("nav-next")}}</a>
+    {% endif %}
+    </div>
+    <a class="post-nav-link post-nav-link-center" href="/blog/" title="Archive">Archive</a>
+</nav>
+
+{% endblock %}

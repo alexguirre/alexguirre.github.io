@@ -1,0 +1,52 @@
+@import url('./header.css');
+@import url('./blog.css');
+@import url('./project-summary.css');
+
+main {
+    margin-inline: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#content {
+    display: flex;
+    gap: 4rem;
+    flex-flow: row nowrap;
+}
+
+@media (max-width: 960px) {
+    #content {
+        flex-flow: column nowrap;
+    }
+}
+
+#posts {
+    flex: 1 0 60%;
+}
+
+#projects {
+    /*flex: 0 1 40%;*/
+    /*flex-basis: 45%;*/
+}
+
+h1 {
+    font-size: 2.0rem;
+    margin-bottom: 0.25em;
+}
+
+h1 > a {
+    color: var(--theme-text);
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    text-decoration: underline;
+}
+
+.summaries-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
