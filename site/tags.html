@@ -2,7 +2,7 @@
 title: Tags
 permalink: /blog/tags/
 ---
-{% from "fragments.njk" import allTagsList, postSummarySmall %}
+{% from "fragments.njk" import allTagsList, postSummarySmall, wip %}
 {% extends "default.html" %}
 
 {% block head %}
@@ -10,6 +10,9 @@ permalink: /blog/tags/
 {% endblock %}
 
 {% block main %}
+{% if env.isProduction %}
+{{ wip() }}
+{% else %}
 <h1>Tags</h1>
 {{ allTagsList(collections) }}
 
@@ -24,4 +27,5 @@ permalink: /blog/tags/
     </div>
 </section>
 {% endfor %}
+{% endif %}
 {% endblock %}

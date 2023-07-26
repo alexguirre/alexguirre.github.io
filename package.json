@@ -4,11 +4,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "prod": "npm run prod:bundle & npm run prod:site-serve",
     "prod:bundle": "webpack --config webpack.config.prod.js",
     "prod:site": "cross-env ELEVENTY_MODE=PROD eleventy",
-    "dev": "npm run dev:bundle & npm run dev:site",
+    "prod:site-serve": "cross-env ELEVENTY_MODE=PROD eleventy --serve",
+    "dev": "npm run dev:bundle & npm run dev:site-serve",
     "dev:bundle": "webpack --config webpack.config.dev.js",
-    "dev:site": "cross-env ELEVENTY_MODE=DEV eleventy --serve",
+    "dev:site": "cross-env ELEVENTY_MODE=DEV eleventy",
+    "dev:site-serve": "cross-env ELEVENTY_MODE=DEV eleventy --serve",
     "clean": "rimraf ./_site",
     "deploy": "npm-run-all clean prod:bundle prod:site"
   },

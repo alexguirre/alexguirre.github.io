@@ -1,4 +1,4 @@
-{% from "fragments.njk" import tag, svgIcon %}
+{% from "fragments.njk" import tag, svgIcon, wip %}
 {% extends 'default.html' %}
 
 {% block head %}
@@ -8,6 +8,9 @@
 
 
 {% block main %}
+{% if env.isProduction %}
+{{ wip() }}
+{% else %}
 <article class="post">
     <h1>{{ title }}</h1>
     <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
@@ -37,5 +40,5 @@
     </div>
     <a class="post-nav-link post-nav-link-center" href="/blog/" title="Archive">Archive</a>
 </nav>
-
+{% endif %}
 {% endblock %}

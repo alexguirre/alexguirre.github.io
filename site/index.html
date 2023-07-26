@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-{% from "fragments.njk" import postSummary, projectSummary %}
+{% from "fragments.njk" import postSummary, projectSummary, wip %}
 {% extends 'default.html' %}
 
 {% block head %}
@@ -9,6 +9,9 @@ title: Home
 {% endblock %}
 
 {% block main %}
+{% if env.isProduction %}
+    {{ wip() }}
+{% else %}
 <section id="about">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque eos exercitationem inventore, libero molestiae mollitia quae. Animi deleniti eveniet fuga non, odio optio, quam recusandae saepe similique, sunt vero?
 </section>
@@ -37,4 +40,5 @@ title: Home
     </section>
     {% endif %}
 </div>
+{% endif %}
 {% endblock %}

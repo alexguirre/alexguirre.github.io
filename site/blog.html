@@ -1,7 +1,7 @@
 ---
 title: Blog
 ---
-{% from "fragments.njk" import allTagsList, postSummary %}
+{% from "fragments.njk" import allTagsList, postSummary, wip %}
 {% extends 'default.html' %}
 
 {% block head %}
@@ -9,6 +9,9 @@ title: Blog
 {% endblock %}
 
 {% block main %}
+{% if env.isProduction %}
+{{ wip() }}
+{% else %}
 <h1>Blog Posts</h1>
 
 {{ allTagsList(collections) }}
@@ -16,4 +19,5 @@ title: Blog
 {% for post in collections.blogPosts | reverse %}
     {{ postSummary(post) }}
 {% endfor %}
+{% endif %}
 {% endblock %}

@@ -62,9 +62,6 @@ module.exports = function(eleventyConfig) {
         });
     }
 
-
-    console.log(">>>>>", process.env.ELEVENTY_MODE);
-
     return {
         templateFormats: [
             "md",
