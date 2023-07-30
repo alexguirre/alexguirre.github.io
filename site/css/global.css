@@ -1,0 +1,113 @@
+@import url('./header.css');
+
+:root {
+    --default-font-family: "Roboto", "Helvetica", sans-serif;
+    --default-monospace-font-family: "JetBrains Mono Regular", "Roboto Mono", monospace;
+    font-family: var(--default-font-family);
+    font-size: 18px;
+
+    /* light mode */
+    --theme-accent-rgb: 235, 156, 0;
+    --theme-accent: rgb(var(--theme-accent-rgb));
+    --theme-background: #f6f8fa;
+    --theme-background-alt: #eeeeee;
+    --theme-background-alt-focus: #d8d8d8;
+    --theme-background-highlight: #dddddd;
+    --theme-text: #000000;
+    --theme-text-subtle-rgb: 102, 102, 102;
+    --theme-text-subtle: rgb(var(--theme-text-subtle-rgb));
+
+    --theme-diff-ins: #bee194;
+    --theme-diff-ins-line: #effad8;
+    --theme-diff-del: #ff9393;
+    --theme-diff-del-line: #ffd2d2;
+
+    /* based on Github's Light theme */
+    --theme-code-font: var(--default-monospace-font-family);
+    --theme-code-background: var(--theme-background-alt);
+    --theme-code-base: var(--theme-text);
+    --theme-code-keyword: #d73a49;
+    --theme-code-type: #6f42c1;
+    --theme-code-xml-element: #d73a49;
+    --theme-code-xml-attribute: #6f42c1;
+    --theme-code-comment: #529949;
+    --theme-code-number: #098658;
+    --theme-code-string: #a31515;
+}
+
+.dark-mode {
+    color-scheme: dark;
+    --theme-accent-rgb: 255, 176, 0;
+    --theme-background: #11161d;
+    --theme-background-alt: #22272e;
+    --theme-background-alt-focus: #35393e;
+    --theme-background-highlight: #33383f;
+    --theme-text: #eeeeee;
+    --theme-text-subtle-rgb: 205, 205, 205;
+
+    --theme-diff-ins: #4b5a2a;
+    --theme-diff-ins-line: #3d4232;
+    --theme-diff-del: #6f1313;
+    --theme-diff-del-line: #502424;
+
+    /* based on Github's Dark Dimmed theme */
+    --theme-code-keyword: #f47067;
+    --theme-code-type: #dcbdfb;
+    --theme-code-xml-element: #f47067;
+    --theme-code-xml-attribute: #dcbdfb;
+    --theme-code-comment: #8ddb8c;
+    --theme-code-number: #b5cea8;
+    --theme-code-string: #ce9178;
+}
+
+:focus-visible {
+    outline: 2px var(--theme-accent) solid;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+@font-face {
+    font-family: "JetBrains Mono Regular";
+    src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+body {
+    background: var(--theme-background);
+    color: var(--theme-text);
+    margin: auto;
+    padding: 0;
+    max-width: 1160px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.row-push {
+    margin-left: auto;
+}
+
+svg.icon {
+    display: block;
+    color: var(--theme-text);
+    vertical-align: middle;
+    width: var(--svg-icon-size, 24px);
+    height: var(--svg-icon-size, 24px);
+}
+
+svg.icon[clickable]:hover {
+    filter: invert(0.35);
+    transform: scale(1.125);
+}
+
+.wip-banner {
+    display: block;
+    margin-inline: auto;
+    margin-block: 6rem;
+    font-family: var(--default-monospace-font-family);
+    font-size: 2rem;
+    text-align: center;
+}

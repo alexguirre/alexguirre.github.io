@@ -1,0 +1,10 @@
+{% from "fragments.njk" import svgIcon %}
+<header>
+    <a class="header-title" href="/" title="Home">{alexguirre}</a>
+    <a class="header-push header-icon" href="https://github.com/alexguirre" title="GitHub">
+        {{ svgIcon("github", clickable=true) }}
+    </a>
+    <button id="theme-switcher" class="header-icon" title="Toggle Theme">
+        {{ svgIcon("theme-switcher", clickable=true) }}
+    </button>
+</header>

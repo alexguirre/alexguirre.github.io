@@ -1,0 +1,57 @@
+{% macro tag(tagName, posts=null) %}
+  {%- if posts -%}
+    <li class="tag"><a href="/blog/tags#{{ tagName }}">{{ tagName }} ({{ posts | length }})</a></li>
+  {%- else -%}
+    <li class="tag"><a href="/blog/tags#{{ tagName }}">{{ tagName }}</a></li>
+  {%- endif -%}
+{% endmacro %}
+
+{% macro allTagsList(collections) %}
+  <ul class="tag-list">
+    {%- for tag_name, posts in collections | cleanTagCollections -%}
+      {{- tag(tag_name, posts) -}}
+    {%- endfor -%}
+  </ul>
+{% endmacro %}
+
+{% macro postSummary(post, headingLevel=2) %}
+  <div class="post-summary">
+    <h{{ headingLevel }} class="summary-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h{{ headingLevel }}>
+    <div class="row">
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <ul class="tag-list row-push">
+        {%- for tag_name in post.data.tags | cleanTags -%}
+          {{- tag(tag_name) -}}
+        {%- endfor -%}
+      </ul>
+    </div>
+    <p>{{ post.data.summary }}</p>
+    <a class="post-summary-small-link" href="{{ post.url }}">Continue reading</a>
+  </div>
+{% endmacro %}
+
+{% macro postSummarySmall(post, headingLevel=3) %}
+  <div class="post-summary post-summary-small">
+    <div class="row">
+      <h{{ headingLevel }} class="summary-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h{{ headingLevel }}>
+      <time class="row-push" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro projectSummary(project, headingLevel=2) %}
+  <div class="project-summary">
+    <h{{ headingLevel }} class="summary-title"><a href="{{ project.url }}">{{ project.name }}</a></h{{ headingLevel }}>
+    <p>{{ project.summary }}</p>
+  </div>
+{% endmacro %}
+
+{% macro svgIcon(iconName, clickable=false) %}
+  <svg fill="currentColor" class="icon" {{ "clickable" if clickable else "" }}>
+    <use href="/img/{{ iconName }}.svg#root"></use>
+  </svg>
+{% endmacro %}
+
+{% macro wip() %}
+  <div class="wip-banner">🚧  WIP  🚧</div>
+{% endmacro %}

@@ -1,0 +1,11 @@
+.project-summary a {
+    text-decoration: none;
+}
+
+.project-summary a:hover {
+    text-decoration: underline;
+}
+
+.project-summary h2.summary-title > a {
+    color: var(--theme-text);
+}

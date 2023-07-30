@@ -1,0 +1,44 @@
+---
+title: Home
+---
+{% from "fragments.njk" import postSummary, projectSummary, wip %}
+{% extends 'default.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/home.css">
+{% endblock %}
+
+{% block main %}
+{% if env.isProduction %}
+    {{ wip() }}
+{% else %}
+<section id="about">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque eos exercitationem inventore, libero molestiae mollitia quae. Animi deleniti eveniet fuga non, odio optio, quam recusandae saepe similique, sunt vero?
+</section>
+<div id="content">
+    {% if collections.blogPosts | length > 0 %}
+    <section id="posts">
+        <h1><a href="blog">Blog Posts</a></h1>
+
+        <div class="summaries-list">
+        {% for post in collections.blogPosts | reverse | head(3) %}
+            {{ postSummary(post) }}
+        {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if projects | length > 0 %}
+    <section id="projects">
+        <h1>Projects</h1>
+
+        <div class="summaries-list">
+        {% for project in projects %}
+            {{ projectSummary(project) }}
+        {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}
