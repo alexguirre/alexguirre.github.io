@@ -18,5 +18,10 @@
     "name": "Inline Hasher",
     "url": "https://marketplace.visualstudio.com/items?itemName=alexguirre.inline-hasher",
     "summary": "A Visual Studio Code extension that allows you to insert hashes of the selected text."
+  },
+  {
+    "name": "sev-zombies",
+    "url": "https://alexguirre.github.io/projects/sev-zombies/",
+    "summary": ""
   }
 ]

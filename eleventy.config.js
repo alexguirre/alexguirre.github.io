@@ -1,6 +1,10 @@
 const luxon = require('luxon');
 const htmlmin = require("html-minifier");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyFetch = require("@11ty/eleventy-fetch");
+const fs = require("fs/promises");
+const path = require("path");
+const AdmZip = require("adm-zip");
 
 module.exports = function(eleventyConfig) {
     const isProduction = process.env.ELEVENTY_MODE === 'PROD';
@@ -62,6 +66,10 @@ module.exports = function(eleventyConfig) {
         });
     }
 
+    eleventyConfig.on("eleventy.before", async ({ dir, runMode, outputMode }) => {
+        await fetchSevZombies(dir.output);
+    });
+
     return {
         templateFormats: [
             "md",
@@ -76,3 +84,34 @@ module.exports = function(eleventyConfig) {
         },
     }
 };
+
+async function fetchSevZombies(outputDir) {
+    try {
+        const cacheDuration = "1d";
+
+        const latestRelease = await eleventyFetch("https://api.github.com/repos/alexguirre/sev-zombies/releases/latest", {
+            duration: cacheDuration,
+            type: "json",
+        });
+        const emscriptenBuildUrl = latestRelease.assets
+            .filter(asset => asset.name === "sev-zombies-wasm32-emscripten.zip")
+            .map(asset => asset.url)[0];
+        const emscriptenBuildZipBuffer = await eleventyFetch(emscriptenBuildUrl, {
+                duration: cacheDuration,
+                type: "buffer",
+                fetchOptions: {
+                    headers: {
+                        "Accept": "application/octet-stream",
+                    }
+                }
+            })
+
+        const zip = new AdmZip(emscriptenBuildZipBuffer);
+        const dir = path.join(outputDir, "projects/sev-zombies");
+        zip.extractEntryTo("sev-zombies-wasm32-emscripten/sev-zombies.data", dir, false, true);
+        zip.extractEntryTo("sev-zombies-wasm32-emscripten/sev-zombies.js", dir, false, true);
+        zip.extractEntryTo("sev-zombies-wasm32-emscripten/sev-zombies.wasm", dir, false, true);
+    } catch (e) {
+        console.log("Failed fetching sev-zombies release", e);
+    }
+}

@@ -17,7 +17,9 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "adm-zip": "^0.5.10",
     "cross-env": "^7.0.3",
     "html-minifier": "^4.0.0",
     "luxon": "^3.3.0",

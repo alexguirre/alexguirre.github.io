@@ -102,3 +102,12 @@ svg.icon[clickable]:hover {
     filter: invert(0.35);
     transform: scale(1.125);
 }
+
+.wip-banner {
+    display: block;
+    margin-inline: auto;
+    margin-block: 6rem;
+    font-family: var(--default-monospace-font-family);
+    font-size: 2rem;
+    text-align: center;
+}
