@@ -17,6 +17,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('site/img');
     eleventyConfig.addPassthroughCopy("site/blog/**/*.png");
 
+    eleventyConfig.ignores.add("site/animations-list/**/*");
+    eleventyConfig.addPassthroughCopy("site/animations-list");
+
     eleventyConfig.addFilter("readableDate", (dateObj) => {
         return luxon.DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLLL yyyy");
     });

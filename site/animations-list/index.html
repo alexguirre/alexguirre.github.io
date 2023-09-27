@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GTA V Animations List</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<script src="js/generate-header-links.js"></script>
+		<div  id="spinLoader" class="loader"></div>
+		<!-- <script src="js/videos-ids.js"></script> -->
+		<script src="js/animations.js"></script>
+		<script src="js/load-anims.js"></script>
+		<div class="main-div" id="mainDiv" style="display: none">
+			<h1>Grand Theft Auto V Animations List (as of game patch v1734)</h1>
+			<p style="font-size: 135%" id="animsCount"></p>
+			<button class="normalbutton" onclick="downloadTxt()" title="Downloads a text file with the animations names that can be used with Menyoo or Animation Viewer">Download animations list</button>
+			<!--<p>NOTE: Animations in the video previews are all played with a ped, although some animations are for props or vehicles. This is due to me not finding a reliable to way to differentiate those animations, eventually this will be replaced with videos using the proper prop/vehicle.</p>-->
+			<ul style="font-size: 110%;list-style-type:none" id="dictList">
+			</ul>
+		</div>
+	</body>
+</html>
